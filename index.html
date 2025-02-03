@@ -13,7 +13,7 @@
             margin: 20px;
             background-image: url('honeycomb.jpg'); 
             background-size: cover; 
-            background-position: top center; /* Nastaví pozadí na začátek (top) */
+            background-position: top center;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
@@ -36,8 +36,17 @@
         /* Media query pro mobilní zařízení */
         @media (max-width: 768px) {
             body {
-                background-position: center center; /* Na mobilu je pozadí centrováno */
+                background-position: center center;
             }
+        }
+
+        /* Pro první logo */
+        .logo {
+            position: fixed;
+            top: 20px; /* Vzdálenost od vrchu */
+            left: 50%;
+            transform: translateX(-50%); /* Pro centrování loga */
+            z-index: 1000; /* Ujistí se, že logo bude vždy nahoře */
         }
     </style>
 </head>
