@@ -13,7 +13,7 @@
             margin: 20px;
             background-image: url('chainhoney.png'); 
             background-size: cover; 
-            background-position: top center; /* Nastaví pozadí na začátek (top) */
+            background-position: top center;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
@@ -26,17 +26,25 @@
         .section {
             margin: 20px 0;
         }
-        img {
+        .logo {
             max-width: 100%;
             height: auto;
             margin-top: 10px;
             cursor: pointer;
         }
-
+        .fixed-size {
+            width: 484px;
+            height: 484px;
+            object-fit: cover; /* Zachová poměr stran a vyplní celý box */
+        }
         /* Media query pro mobilní zařízení */
         @media (max-width: 768px) {
             body {
-                background-position: center center; /* Na mobilu je pozadí centrováno */
+                background-position: center center;
+            }
+            .fixed-size {
+                width: 100%; /* Přizpůsobí šířku obrazovce */
+                height: auto;
             }
         }
     </style>
@@ -47,25 +55,25 @@
 
     <div class="section">
         <a href="www-aplikace.html">
-            <img src="LC-web.png" alt="WWW aplikace">
+            <img src="LC-web.png" alt="WWW aplikace" class="fixed-size">
         </a>
     </div>
 
     <div class="section">
         <a href="koucink.html">
-            <img src="LC-coach.png" alt="Koučink">
+            <img src="LC-coach.png" alt="Koučink" class="fixed-size">
         </a>
     </div>
 
     <div class="section">
         <a href="resin.html">
-            <img src="LC-resin.png" alt="Resin stoly">
+            <img src="LC-resin.png" alt="Resin stoly" class="fixed-size">
         </a>
     </div>
 
     <div class="section">
         <a href="hourmaster.html">
-            <img src="LC-hour.png" alt="Hourmaster">
+            <img src="LC-hour.png" alt="Hourmaster" class="fixed-size">
         </a>
     </div>
 
