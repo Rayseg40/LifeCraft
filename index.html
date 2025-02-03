@@ -13,7 +13,7 @@
             margin: 20px;
             background-image: url('honeycomb.jpg'); 
             background-size: cover; 
-            background-position: center; 
+            background-position: top center; /* Nastaví pozadí na začátek (top) */
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
@@ -32,15 +32,21 @@
             margin-top: 10px;
             cursor: pointer;
         }
+
+        /* Media query pro mobilní zařízení */
+        @media (max-width: 768px) {
+            body {
+                background-position: center center; /* Na mobilu je pozadí centrováno */
+            }
+        }
     </style>
 </head>
 <body>
 
     <img src="lifecraft2.png" alt="Life Craft Logo" class="logo"> 
 
-
     <div class="section">
-                <a href="www-aplikace.html">
+        <a href="www-aplikace.html">
             <img src="manPC2.png" alt="WWW aplikace">
         </a>
     </div>
