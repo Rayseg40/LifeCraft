@@ -13,7 +13,7 @@
             margin: 20px;
             background-image: url('Obrázek1.png'); 
             background-size: cover; 
-            background-position: top center; /* Nastaví pozadí na začátek (top) */
+            background-position: top center;
             background-repeat: no-repeat;
             background-attachment: fixed;
         }
@@ -24,26 +24,28 @@
             color: #34495e;
         }
         .section {
-            margin: 20px 0;
+            margin: 50px 0; /* Zvýšení mezery mezi sekcemi pro lepší viditelnost */
         }
         img {
             max-width: 100%;
             height: auto;
-            margin-top: 10px;
+            margin-top: 20px; /* Posunutí obrázků dolů */
             cursor: pointer;
         }
 
         /* Media query pro mobilní zařízení */
         @media (max-width: 768px) {
             body {
-                background-position: center center; /* Na mobilu je pozadí centrováno */
+                background-position: center center;
+            }
+            .section {
+                margin: 30px 0; /* Mírně menší mezery na mobilu */
             }
         }
     </style>
 </head>
 <body>
 
-  
     <div class="section">
         <a href="www-aplikace.html">
             <img src="manPC2.png" alt="WWW aplikace">
